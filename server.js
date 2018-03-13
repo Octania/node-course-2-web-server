@@ -29,20 +29,6 @@ hbs.registerHelper('getCurrentYear', function() {
 hbs.registerHelper('screamIt', function(text) {
   return text.toUpperCase();
 });
-// app.get('/', function(request, respond){
-//   respond.send({
-//
-//     name: 'Patrick Judson',
-//     like: [
-//       'Biking',
-//       'Cities'
-//     ]
-//   });
-// });
-
-app.use(function(request, respond, next) {
-  respond.render('maintenance.hbs');
-});
 
 app.get('/', function(request, respond) {
   respond.render('home.hbs', {
